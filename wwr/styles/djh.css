@@ -1,0 +1,50 @@
+div {
+    max-width: 800px;
+}
+
+h5:hover {
+color: black}
+
+
+img {
+  display: block;
+  max-width: 300px;
+}
+
+p {
+    text-align: center;
+    color: white;
+    text-transform: capitalize ;
+    
+}
+
+* {
+    background-color:#cc9900;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    text-decoration-color: rgb(0, 0, 0);
+}
+
+h2 {
+    text-align: center;
+    text-decoration-color: rgb(0, 0, 0);
+}
+
+h3 {
+    text-align: center;
+    text-decoration-color: rgb(0, 0, 0);
+}
+
+h4 {
+    text-align: center;
+    text-decoration-color: rgb(0, 0, 0);
+}
+
+h5  {
+    text-align: center;
+    color: white;
+    font-size: 80px;
+}
