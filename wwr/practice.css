@@ -1,0 +1,58 @@
+img {
+    width: 100px;
+    height: 100px;
+    inline-size: 50%;
+}
+
+footer {
+    background-color: darkgrey;
+}
+
+header {
+    background-color: darkgray;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+body {
+    background-color: lightgray;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navcontainer {
+    text-align: center;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#top {
+    text-shadow: 1px;
+}
+
+#team {
+    text-shadow: 1px;
+}
+
+#contact {
+    text-shadow: 1px;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.card {
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 10px;
+    background-color: white;
+    inline-size: 50%;
+}
