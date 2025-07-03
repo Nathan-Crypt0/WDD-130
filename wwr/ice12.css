@@ -1,7 +1,7 @@
 .poem {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Default center if not overridden */
+  align-items: center; 
   width: 100%;
 }
 
@@ -9,7 +9,6 @@ section {
   width: 50%;
   border: 1px solid black;
   padding: 10px;
-  display: flex;
   flex-direction: column;
 }
 
@@ -23,6 +22,7 @@ section p {
 .block1 {
   align-self: flex-start;
   text-align: left;
+
 }
 
 .block1 p {
@@ -55,7 +55,12 @@ section p {
   text-align: center;
 }
 
-.block4 p {
-  align-self: center;
-  text-align: center;
-}
+
+
+p:nth-of-type(1) { text-align: left;}
+p:nth-of-type(2) { text-align: center;}
+p:nth-of-type(3) { text-align: right;}
+
+.block4 p:nth-of-type(1) {text-align: right;}
+.block4 p:nth-of-type(2) {text-align: center;}
+.block4 p:nth-of-type(3) {text-align: left;}
