@@ -5,9 +5,12 @@ body {
   background-size: cover;
   background-position: center;
   image-rendering: pixelated;
+  image-rendering: optimizeQuality;
+  image-rendering: crisp-edges;
   margin: 0;
   padding: 20px;
   text-align: center;
+  background-attachment: fixed;
 }
 
 .lego-title {
@@ -47,4 +50,31 @@ header {
   background-color: var(--paragraph-background-color);
   color: #ffcc00;
   text-shadow: 4px 4px 0 #000;
+}
+
+footer section {
+  background-color: black;
+  padding: 20px;
+  border-radius: 50%;
+  border: 5px solid white; 
+  color: white; 
+  text-align: center; 
+}
+
+  footer section img {
+  border-radius: 50%;
+}
+
+a {
+  display: inline-block;
+  border: 5px solid black;
+  color: yellow;
+  background-color: darkred;
+  padding: 10px 20px;
+  text-align: center;
+  text-shadow: 4px 4px 0 #000;
+  margin: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2rem;
+  text-decoration: none;
 }

@@ -1,0 +1,61 @@
+.poem {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Default center if not overridden */
+  width: 100%;
+}
+
+section {
+  width: 50%;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+section p {
+  margin: 0.3em 0;
+  text-align: start; 
+}
+
+
+.block1 {
+  align-self: flex-start;
+  text-align: left;
+}
+
+.block1 p {
+  align-self: flex-start;
+  text-align: left;
+}
+
+.block2 {
+  align-self: center;
+  text-align: center;
+}
+
+.block2 p {
+  align-self: center;
+  text-align: center;
+}
+
+.block3 {
+  align-self: flex-end;
+  text-align: right;
+}
+
+.block3 p {
+  align-self: flex-end;
+  text-align: right;
+}
+
+.block4 {
+  align-self: center;
+  text-align: center;
+}
+
+.block4 p {
+  align-self: center;
+  text-align: center;
+}
