@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deep Rock Tabs</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: radial-gradient(#000000, #1a1a1a);
+  color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+h2, h3 {
+  color: #f0c93d;
+  text-shadow: 2px 2px 5px #000;
+  padding: 10px;
+}
+
+/* Tab container */
+.tab {
+  float: left;
+  border-right: 2px solid #444;
+  background: linear-gradient(#2c2c2c, #1a1a1a);
+  width: 30%;
+  height: 100vh;
+  padding-top: 20px;
+  box-shadow: 4px 0 8px rgba(0,0,0,0.7);
+}
+
+/* Tab buttons */
+.tab button {
+  display: block;
+  background: #1a1a1a;
+  color: #f0c93d;
+  padding: 20px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #333;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 18px;
+  background: 0.3s, transform 0.2s;
+}
+.tab button:hover {
+  background: #292929;
+  transform: scale(1.02);
+}
+.tab button.active {
+  background: #3a2e0d;
+  color: #ffffff;
+  box-shadow: inset 0 0 10px yellow;
+}
+
+/* Content box */
+.tabcontent {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  height: 100vh;
+  background: #0d0d0d;
+  border-left: 2px solid #444;
+  display: none;
+}
+
+.tabcontent p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Make it responsive */
+@media screen and (max-width: 768px) {
+  .tab, .tabcontent {
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>MISSION SELECT - Deep Rock Galactic</h2>
+
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'London')" id="defaultOpen">Hollow Bough</button>
+  <button class="tablinks" onclick="openTab(event, 'Paris')">Fungus Bogs</button>
+  <button class="tablinks" onclick="openTab(event, 'Tokyo')">Crystalline Caverns</button>
+</div>
+
+<div id="London" class="tabcontent">
+  <h3>Hollow Bough</h3>
+  <p>Thorny trees, parasitic vines. Proceed with caution. Glyphid nests detected.</p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Fungus Bogs</h3>
+  <p>Dense with spores and bioluminescence. Expect increased Mactera activity.</p> 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Crystalline Caverns</h3>
+  <p>Glittering rock formations. Excellent for mining. Beware of environmental hazards.</p>
+</div>
+
+<script>
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].classList.remove("active");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.classList.add("active");
+}
+
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>
