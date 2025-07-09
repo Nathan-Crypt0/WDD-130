@@ -105,23 +105,30 @@ p.colored {
 nav {
   background-color: var(--nav-background-color);
   font-family: var(--heading-font);
-  letter-spacing: 2px;
   display: flex;
   justify-content: center;
+  gap: 2em;
+  padding: 1em 0;
+  border-top: 4px solid var(--accent1-color);
+  border-bottom: 4px solid var(--accent1-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
+
 nav a {
-  padding: 1em;
-  min-width: 120px;
-  text-decoration: none;
-}
-nav a:link,
-nav a:visited {
   color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 0.5em 1em;
+  font-size: 1.3rem;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+  border-radius: 8px;
 }
+
 nav a:hover {
-  color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
+  color: var(--nav-hover-link-color);
+  transform: scale(1.05);
 }
+
 
 .sitemap {
   display: grid;
