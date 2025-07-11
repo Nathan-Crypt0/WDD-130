@@ -1,6 +1,89 @@
+
+header {
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #ffcc00;
+  text-align: center;
+  padding: 1.5em 0;
+  border-bottom: 5px solid #ffcc00;
+  text-shadow: 3px 3px 0 #000;
+}
+
+.site-title {
+  font-size: 3rem;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+header h2 {
+  margin: 0.5em 0;
+  font-size: 1.2rem;
+  font-family: 'Courier New', Courier, monospace;
+  color: #ffd700;
+}
+
+
+header nav {
+  margin-top: 1em;
+}
+
+header nav a {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: darkred;
+  color: yellow;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border: 3px solid black;
+  border-radius: 10px;
+  text-shadow: 2px 2px #000;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+header nav a:hover {
+  background-color: red;
+  color: white;
+  transform: scale(1.1);
+}
+
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  border-top: 5px solid #ffcc00;
+}
+
+footer p {
+  margin: 0.5em 0;
+  font-size: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+
+
 body {
   font-family: 'Arial', sans-serif;
-  background-image: url("images/starwarsbackground.jpg");
+  background-image: url(images/starwarsbackground.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -8,11 +91,32 @@ body {
   background-attachment: fixed;
   margin: 0;
   padding: 20px;
-  text-align: center;
   color: #ffe066;
+  text-align: center;
 }
 
-a {
+
+header {
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffcc00;
+  text-shadow: 4px 4px 0 #000;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  margin: 0 0 10px 0;
+}
+
+nav {
+  margin-top: 20px;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  display: inline-block;
+}
+
+nav a {
   display: inline-block;
   border: 5px solid black;
   color: yellow;
@@ -23,71 +127,87 @@ a {
   font-family: 'Courier New', Courier, monospace;
   font-size: 2rem;
   text-decoration: none;
+  border-radius: 12px;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
-.lego-title {
-  font-size: 2.5rem;
-  color: #ffcc00;
-  text-shadow: 4px 4px 0 #000;
-  margin-bottom: 40px;
-  font-family: 'Courier New', Courier, monospace;
+nav a:hover,
+nav a.active {
+  background-color: red;
+  color: white;
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+.starwars-list {
+  max-width: 900px;
+  margin: 0 auto 60px auto;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
   gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
 }
 
-.grid-card {
-  background-color: rgba(0, 0, 0, 0.85);
-  color: #ffe066;
-  padding: 20px;
+
+.starwars-card {
+  display: flex;
+  background: rgba(0, 0, 0, 0.85);
   border-radius: 20px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.6);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  text-align: left;
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
+  padding: 20px;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.grid-card:hover {
+.starwars-card:hover {
   transform: scale(1.05);
   box-shadow: 0 12px 24px rgba(0,0,0,0.8);
   cursor: pointer;
 }
 
-.grid-card img {
-  width: 100%;
-  border-radius: 12px;
-  margin-bottom: 15px;
+
+.starwars-card img {
+  width: 280px;
+  height: 280px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 0 20px black;
+  margin-right: 30px;
 }
 
-.grid-card h3 {
+
+.card-text {
+  color: #ffe066;
+  text-align: left;
+  font-family: 'Arial', sans-serif;
+  flex: 1;
+}
+
+.card-text h3 {
   margin-top: 0;
+  font-size: 2rem;
   color: #ffcc00;
-  text-shadow: 2px 2px #000;
-  font-size: 1.4rem;
+  text-shadow: 2px 2px 0 #000;
 }
 
-header {
-  padding: 1em;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #ffcc00;
-  text-shadow: 4px 4px 0 #000;
+.card-text p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-top: 0.5em;
 }
+
 
 footer section {
   background-color: black;
   padding: 20px;
   border-radius: 50%;
-  border: 5px solid white;
-  color: white;
+  border: 5px solid white; 
+  color: white; 
   text-align: center;
+  width: max-content;
+  margin: 0 auto 50px auto;
+  box-shadow: 0 0 15px white;
 }
 
 footer section img {
@@ -95,3 +215,4 @@ footer section img {
   width: 40px;
   margin: 0 10px;
 }
+ 
