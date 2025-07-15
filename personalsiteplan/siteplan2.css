@@ -1,9 +1,10 @@
+
 header {
-  background-color: rgba(0, 0, 0, 0.85);
-  color: #ffcc00;
+  background-color: rgba(0, 0, 128, 0.85); 
+  color: #ffcc00; 
   text-align: center;
   padding: 1.5em 0;
-  border-bottom: 5px solid #ffcc00;
+  border-bottom: 5px solid #ff0000; 
   text-shadow: 3px 3px 0 #000;
 }
 
@@ -11,13 +12,14 @@ header {
   font-size: 3rem;
   margin: 0;
   font-family: 'Courier New', Courier, monospace;
+  color: #ffcc00; 
 }
 
 header h2 {
   margin: 0.5em 0;
   font-size: 1.2rem;
   font-family: 'Courier New', Courier, monospace;
-  color: #ffd700;
+  color: #ffff00; 
 }
 
 header nav {
@@ -28,36 +30,52 @@ header nav a {
   display: inline-block;
   margin: 0 10px;
   padding: 10px 20px;
-  background-color: darkred;
-  color: yellow;
+  background-color: #ff0000; 
+  color: #ffff00; 
   font-family: 'Courier New', Courier, monospace;
   font-size: 1.2rem;
   text-decoration: none;
-  border: 3px solid black;
+  border: 3px solid #0000ff; 
   border-radius: 10px;
   text-shadow: 2px 2px 0 #000;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 header nav a:hover {
-  background-color: red;
-  color: white;
+  background-color: #0000ff; 
+  color: #ffcc00; 
   transform: scale(1.1);
 }
 
+
 footer {
-  background-color: black;
-  color: white;
+  background-color: #000080; 
+  color: #ffcc00; 
   text-align: center;
   padding: 20px 0;
   margin-top: 40px;
-  border-top: 5px solid #ffcc00;
+  border-top: 5px solid #ff0000;
 }
 
 footer p {
   margin: 0.5em 0;
   font-size: 1rem;
   font-family: 'Courier New', Courier, monospace;
+}
+
+footer section {
+  background-color: #000080; 
+  padding: 20px;
+  border-radius: 0;
+  border: none;
+  color: #ffcc00;
+  text-align: center;
+}
+
+footer section img {
+  border-radius: 50%;
+  width: 40px;
+  margin: 0 10px;
 }
 
 .social-icons {
@@ -77,6 +95,7 @@ footer p {
   transform: scale(1.2);
 }
 
+
 body {
   font-family: 'Arial', sans-serif;
   background-image: url(images/ninjagobackground.jpg);
@@ -88,29 +107,41 @@ body {
   margin: 0;
   padding: 20px;
   text-align: center;
-  color: #ffe066;
+  color: #ffcc00; 
 }
+
 
 a {
   display: inline-block;
-  border: 5px solid black;
-  color: yellow;
-  background-color: darkred;
+  border: 5px solid #0000ff; 
+  color: #ffff00; 
+  background-color: #ff0000;
   padding: 10px 20px;
   margin: 10px;
   text-shadow: 4px 4px 0 #000;
   font-family: 'Courier New', Courier, monospace;
   font-size: 2rem;
   text-decoration: none;
+  border-radius: 12px;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
+
+a:hover {
+  background-color: #0000ff; 
+  color: #ffcc00;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 
 .lego-title {
   font-size: 2.5rem;
-  color: #ffcc00;
+  color: #ffcc00; 
   text-shadow: 4px 4px 0 #000;
   margin-bottom: 40px;
   font-family: 'Courier New', Courier, monospace;
 }
+
 
 .grid-container {
   display: grid;
@@ -121,12 +152,13 @@ a {
   padding: 20px;
 }
 
+
 .grid-card {
-  background-color: rgba(0, 0, 0, 0.85);
-  color: #ffe066;
+  background-color: rgba(0, 0, 128, 0.85); 
+  color: #ffcc00; 
   padding: 20px;
   border-radius: 20px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   text-align: left;
   font-family: 'Arial', sans-serif;
@@ -135,7 +167,7 @@ a {
 
 .grid-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.8);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.8);
   cursor: pointer;
 }
 
@@ -147,47 +179,42 @@ a {
 
 .grid-card h3 {
   margin-top: 0;
-  color: #ffcc00;
+  color: #ff0000; 
   text-shadow: 2px 2px #000;
   font-size: 1.4rem;
 }
 
-nav a {
-  color: var(--nav-link-color);
-  text-decoration: none;
-  padding: 0.5em 1em;
-  font-size: 1.3rem;
-  transition: background-color 0.3s, color 0.3s, transform 0.2s;
-  border-radius: 8px;
+/
+nav {
+  margin-top: 20px;
+  padding: 1em;
+  background-color: rgba(0, 0, 128, 0.6); 
+  border-radius: 12px;
 }
 
-:root {
-  --nav-link-color: yellow;
-  --nav-hover-background-color: darkred;
-  --nav-hover-link-color: white;
+nav a {
+  display: inline-block;
+  border: 5px solid #0000ff; 
+  color: #ffff00; 
+  background-color: #ff0000; 
+  padding: 10px 20px;
+  margin: 10px;
+  text-shadow: 4px 4px 0 #000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2rem;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover {
-  background-color: var(--nav-hover-background-color);
-  color: var(--nav-hover-link-color);
-  transform: scale(1.05);
+  background-color: #0000ff; 
+  color: #ffcc00; 
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
-footer section {
-  background-color: black;
-  padding: 20px;
-  border-radius: 0; 
-  border: none;    
-  color: white;
-  text-align: center;
-}
-
-footer section img {
-  border-radius: 50%;
-  width: 40px;
-  margin: 0 10px;
-}
-
+/* Flip Card */
 .flip-card {
   background-color: transparent;
   width: 300px;
@@ -221,14 +248,14 @@ footer section img {
   justify-content: center;
   padding: 20px;
   box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0.85);
-  color: #ffe066;
+  background-color: rgba(0, 0, 128, 0.85); 
+  color: #ffcc00; 
   text-align: center;
   font-family: 'Arial', sans-serif;
 }
 
 .flip-card-front {
-  background-color: #000;
+  background-color: #000080; 
 }
 
 .flip-card-back {
@@ -242,32 +269,4 @@ footer section img {
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 0 20px black;
-}
-
-nav {
-  margin-top: 20px;
-  padding: 1em;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 12px;
-}
-
-nav a {
-  display: inline-block;
-  border: 5px solid black;
-  color: yellow;
-  background-color: darkred;
-  padding: 10px 20px;
-  margin: 10px;
-  text-shadow: 4px 4px 0 #000;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 2rem;
-  text-decoration: none;
-  border-radius: 12px;
-  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-}
-
-nav a:hover {
-  color: white;
-  transform: scale(1.1);
-  cursor: pointer;
 }

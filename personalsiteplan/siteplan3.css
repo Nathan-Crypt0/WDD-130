@@ -1,218 +1,207 @@
-
 header {
-  background-color: rgba(0, 0, 0, 0.85);
-  color: #ffcc00;
-  text-align: center;
-  padding: 1.5em 0;
-  border-bottom: 5px solid #ffcc00;
-  text-shadow: 3px 3px 0 #000;
+background-color: rgba(0, 0, 128, 0.85);
+color: #ffcc00;
+text-align: center;
+padding: 1.5em 0;
+border-bottom: 5px solid #ff0000;
+text-shadow: 3px 3px 0 #000;
 }
 
 .site-title {
-  font-size: 3rem;
-  margin: 0;
-  font-family: 'Courier New', Courier, monospace;
+font-size: 3rem;
+margin: 0;
+font-family: 'Courier New', Courier, monospace;
+color: #ffcc00;
 }
 
 header h2 {
-  margin: 0.5em 0;
-  font-size: 1.2rem;
-  font-family: 'Courier New', Courier, monospace;
-  color: #ffd700;
+margin: 0.5em 0;
+font-size: 1.2rem;
+font-family: 'Courier New', Courier, monospace;
+color: #ffff00;
 }
 
-
 header nav {
-  margin-top: 1em;
+margin-top: 1em;
 }
 
 header nav a {
-  display: inline-block;
-  margin: 0 10px;
-  padding: 10px 20px;
-  background-color: darkred;
-  color: yellow;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 1.2rem;
-  text-decoration: none;
-  border: 3px solid black;
-  border-radius: 10px;
-  text-shadow: 2px 2px #000;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+display: inline-block;
+margin: 0 10px;
+padding: 10px 20px;
+background-color: #ff0000;
+color: #ffff00;
+font-family: 'Courier New', Courier, monospace;
+font-size: 1.2rem;
+text-decoration: none;
+border: 3px solid #0000ff;
+border-radius: 10px;
+text-shadow: 2px 2px #000;
+transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 header nav a:hover {
-  background-color: red;
-  color: white;
-  transform: scale(1.1);
+background-color: #0000ff;
+color: #ffcc00;
+transform: scale(1.1);
 }
 
-
 footer {
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-  margin-top: 40px;
-  border-top: 5px solid #ffcc00;
+background-color: #000080;
+color: #ffcc00;
+text-align: center;
+padding: 20px 0;
+margin-top: 40px;
+border-top: 5px solid #ff0000;
 }
 
 footer p {
-  margin: 0.5em 0;
-  font-size: 1rem;
-  font-family: 'Courier New', Courier, monospace;
+margin: 0.5em 0;
+font-size: 1rem;
+font-family: 'Courier New', Courier, monospace;
 }
 
 .social-icons {
-  margin-top: 10px;
+margin-top: 10px;
 }
 
 .social-icons img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin: 0 10px;
-  transition: transform 0.3s ease;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+margin: 0 10px;
+transition: transform 0.3s ease;
 }
 
 .social-icons img:hover {
-  transform: scale(1.2);
+transform: scale(1.2);
 }
-
-
 
 body {
-  font-family: 'Arial', sans-serif;
-  background-image: url(images/starwarsbackground.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  image-rendering: crisp-edges;
-  background-attachment: fixed;
-  margin: 0;
-  padding: 20px;
-  color: #ffe066;
-  text-align: center;
+font-family: 'Arial', sans-serif;
+background-image: url(images/starwarsbackground.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+image-rendering: crisp-edges;
+background-attachment: fixed;
+margin: 0;
+padding: 20px;
+color: #ffcc00;
+text-align: center;
 }
 
-
 header {
-  padding: 1em;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #ffcc00;
-  text-shadow: 4px 4px 0 #000;
-  margin-bottom: 40px;
+padding: 1em;
+background-color: rgba(0, 0, 128, 0.8);
+color: #ffcc00;
+text-shadow: 4px 4px 0 #000;
+margin-bottom: 40px;
 }
 
 header h1 {
-  margin: 0 0 10px 0;
+margin: 0 0 10px 0;
 }
 
 nav {
-  margin-top: 20px;
-  padding: 1em;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 12px;
-  display: inline-block;
+margin-top: 20px;
+padding: 1em;
+background-color: rgba(0, 0, 128, 0.6);
+border-radius: 12px;
+display: inline-block;
 }
 
 nav a {
-  display: inline-block;
-  border: 5px solid black;
-  color: yellow;
-  background-color: darkred;
-  padding: 10px 20px;
-  margin: 10px;
-  text-shadow: 4px 4px 0 #000;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 2rem;
-  text-decoration: none;
-  border-radius: 12px;
-  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+display: inline-block;
+border: 5px solid #0000ff;
+color: #ffff00;
+background-color: #ff0000;
+padding: 10px 20px;
+margin: 10px;
+text-shadow: 4px 4px 0 #000;
+font-family: 'Courier New', Courier, monospace;
+font-size: 2rem;
+text-decoration: none;
+border-radius: 12px;
+transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover,
 nav a.active {
-  background-color: red;
-  color: white;
-  transform: scale(1.1);
-  cursor: pointer;
+background-color: #0000ff;
+color: #ffcc00;
+transform: scale(1.1);
+cursor: pointer;
 }
-
 
 .starwars-list {
-  max-width: 900px;
-  margin: 0 auto 60px auto;
-  padding: 0 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+max-width: 900px;
+margin: 0 auto 60px auto;
+padding: 0 10px;
+display: flex;
+flex-direction: column;
+gap: 30px;
 }
 
-
 .starwars-card {
-  display: flex;
-  background: rgba(0, 0, 0, 0.85);
-  border-radius: 20px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.6);
-  padding: 20px;
-  align-items: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+display: flex;
+background: rgba(0, 0, 128, 0.85);
+border-radius: 20px;
+box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+padding: 20px;
+align-items: center;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .starwars-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.8);
-  cursor: pointer;
+transform: scale(1.05);
+box-shadow: 0 12px 24px rgba(0,0,0,0.8);
+cursor: pointer;
 }
-
 
 .starwars-card img {
-  width: 280px;
-  height: 280px;
-  border-radius: 20px;
-  object-fit: cover;
-  box-shadow: 0 0 20px black;
-  margin-right: 30px;
+width: 280px;
+height: 280px;
+border-radius: 20px;
+object-fit: cover;
+box-shadow: 0 0 20px black;
+margin-right: 30px;
 }
 
-
 .card-text {
-  color: #ffe066;
-  text-align: left;
-  font-family: 'Arial', sans-serif;
-  flex: 1;
+color: #ffcc00;
+text-align: left;
+font-family: 'Arial', sans-serif;
+flex: 1;
 }
 
 .card-text h3 {
-  margin-top: 0;
-  font-size: 2rem;
-  color: #ffcc00;
-  text-shadow: 2px 2px 0 #000;
+margin-top: 0;
+font-size: 2rem;
+color: #ff0000;
+text-shadow: 2px 2px 0 #000;
 }
 
 .card-text p {
-  font-size: 1.1rem;
-  line-height: 1.5;
-  margin-top: 0.5em;
+font-size: 1.1rem;
+line-height: 1.5;
+margin-top: 0.5em;
 }
 
-
 footer section {
-  background-color: black;
-  padding: 20px;
-  border-radius: 50%;
-  border: 5px solid white; 
-  color: white; 
-  text-align: center;
-  width: max-content;
-  margin: 0 auto 50px auto;
-  box-shadow: 0 0 15px white;
+background-color: #000080;
+padding: 20px;
+border-radius: 50%;
+border: 5px solid #ffffff;
+color: #ffffff;
+text-align: center;
+width: max-content;
+margin: 0 auto 50px auto;
+box-shadow: 0 0 15px #ffffff;
 }
 
 footer section img {
-  border-radius: 50%;
-  width: 40px;
-  margin: 0 10px;
+border-radius: 50%;
+width: 40px;
+margin: 0 10px;
 }
- 
